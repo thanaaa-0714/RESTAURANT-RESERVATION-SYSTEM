@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "name": "thanam",
+      "email": "thanam0714@gmail.com",
+      "password": "ferorambo@2514",
+      "id": "bMCymnx02VI"
+    },
+    {
+      "name": "rambo",
+      "email": "thanavathip25cy@srishakthi.ac.in",
+      "password": "rambo@07",
+      "id": "aHoOTMPP7fw"
+    }
+  ],
+  "reservations": [
+    {
+      "customerName": "thanam",
+      "phone": "3698521470",
+      "guests": 4,
+      "date": "2026-10-30",
+      "requests": "bugskyudufhyus",
+      "restaurant": "Kafein",
+      "restaurantId": "uewq1zg2zlskfw1e867",
+      "table": "Table 3",
+      "tableCapacity": 6,
+      "time": "1:00 PM",
+      "userId": "bMCymnx02VI",
+      "id": "4wHoGit9nuA"
+    },
+    {
+      "customerName": "thanam",
+      "phone": "1236547890",
+      "guests": 4,
+      "date": "2026-10-30",
+      "requests": "hghfgfgh",
+      "restaurant": "Kafe Kita",
+      "restaurantId": "s1knt6za9kkfw1e867",
+      "table": "Table 3",
+      "tableCapacity": 6,
+      "time": "1:00 PM",
+      "userId": "bMCymnx02VI",
+      "id": "8l9LsnnawBQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

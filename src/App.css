@@ -1,0 +1,430 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8f0;
+  color: #333;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header and Navigation */
+
+header {
+  background: #5b3025;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h2 {
+  margin-bottom: 10px;
+}
+
+header span {
+  display: block;
+  margin: 10px 0;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+header nav button {
+  margin: 0;
+  background: #7b4535;
+}
+
+/* Background and Home Page */
+
+.home {
+  flex: 1;
+  min-height: 75vh;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.home-content h2 {
+  color: #5b3025;
+  margin-bottom: 15px;
+}
+
+.home-content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Login and Register */
+
+.auth-page {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-card {
+  background: white;
+  width: 100%;
+  max-width: 530px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.auth-card h2 {
+  color: #5b3025;
+  margin-bottom: 15px; 
+}
+
+.auth-card p {
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.auth-card button {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.auth-card .secondary {
+  background: #777;
+}
+
+/* Main Content Container */
+
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+  flex: 1;
+}
+
+main h1 {
+  color: #5b3025;
+  margin-bottom: 20px;
+}
+
+main h3 {
+  color: #5b3025;
+  margin-bottom: 10px;
+}
+
+/* Input Fields */
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Buttons */
+
+button {
+  background: #7b4535;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 8px 5px 8px 0;
+}
+
+button:hover {
+  background: #5b3025;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.secondary {
+  background: #777;
+}
+
+.danger {
+  background: #c0392b;
+}
+
+.danger:hover {
+  background: #922b21;
+}
+
+/* Content Panels */
+
+.panel {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+}
+
+.panel > h1 {
+  text-align: center;
+}
+
+.panel > p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Restaurant Cards */
+
+.grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  color: #5b3025;
+  margin: 12px 0;
+}
+
+.card p {
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* Table and Time Selection */
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.choices button {
+  background: #eee;
+  color: #333;
+  border: 2px solid #ddd;
+  margin: 0;
+}
+
+.choices button:hover {
+  background: #e4d2c8;
+}
+
+.choices button.chosen {
+  background: #7b4535;
+  color: white;
+  border-color: #7b4535;
+}
+
+/* Booking Form */
+
+.panel form {
+  width: 100%;
+}
+
+.panel form label {
+  display: block;
+  margin-top: 12px;
+}
+
+.panel form button {
+  margin-top: 15px;
+}
+
+/* Reservation Confirmation */
+
+.confirmation {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.confirmation h2 {
+  color: #287a3e;
+}
+
+.confirmation-details {
+  text-align: left;
+  background: #f5fff7;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Reservation History */
+
+.history {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  margin-top: 15px;
+}
+
+.history h3 {
+  color: #5b3025;
+  margin-bottom: 10px;
+}
+
+.history p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+/* Messages */
+
+.error {
+  background: #f8d7da;
+  color: #842029;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+.success {
+  background: #d4edda;
+  color: #155724;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+.message {
+  background: #fff3cd;
+  color: #664d03;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  background: #5b3025;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+  .auth-card {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  main {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav button {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .choices {
+    flex-direction: column;
+  }
+
+  .choices button {
+    width: 100%;
+  }
+
+  .history button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
