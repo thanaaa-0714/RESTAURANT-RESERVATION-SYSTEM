@@ -41,6 +41,20 @@
       "time": "1:00 PM",
       "userId": "bMCymnx02VI",
       "id": "8l9LsnnawBQ"
+    },
+    {
+      "customerName": "thanam",
+      "phone": "9632154780",
+      "guests": 3,
+      "date": "2026-10-30",
+      "requests": "use fresh vegetables",
+      "restaurant": "Ampiran Kota",
+      "restaurantId": "6u9lf7okjh9kfw1e867",
+      "table": "Table 2",
+      "tableCapacity": 4,
+      "time": "12:00 PM",
+      "userId": "bMCymnx02VI",
+      "id": "5eLz7R59rOU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
